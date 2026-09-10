@@ -9,7 +9,7 @@
             subtitle="Simple, transparent pricing for consultations and pharmacy products"
         />
 
-        <div class="mt-12 grid md:grid-cols-3 gap-6 items-start">
+        <div class="mt-12 grid md:grid-cols-3 gap-6 items-stretch">
 
             <x-pricing-card
                 title="Clinic Consultation"
