@@ -5,12 +5,12 @@
 ])
 
 @php
-    $base = 'inline-block px-6 py-3 rounded-lg font-semibold text-center transition duration-200';
+    $base = 'inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-semibold text-center transition-all duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0';
 
     $variants = [
-        'primary'   => 'bg-clinic-magenta text-white hover:bg-pink-700',
-        'secondary' => 'bg-clinic-blue text-white hover:bg-blue-800',
-        'outline'   => 'border-2 border-clinic-magenta text-clinic-magenta hover:bg-clinic-magenta hover:text-white',
+        'primary'   => 'bg-gradient-to-r from-clinic-magenta to-pink-500 text-white shadow-lg shadow-pink-500/30 hover:shadow-xl hover:shadow-pink-500/40',
+        'secondary' => 'bg-clinic-navy text-white shadow-lg shadow-blue-900/20 hover:shadow-xl',
+        'outline'   => 'border-2 border-clinic-magenta text-clinic-magenta bg-white/70 backdrop-blur-sm hover:bg-clinic-magenta hover:text-white',
     ];
 
     $classes = $base . ' ' . ($variants[$variant] ?? $variants['primary']);
