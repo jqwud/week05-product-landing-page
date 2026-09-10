@@ -6,9 +6,9 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: Candara, Calibri, "Trebuchet MS", sans-serif;
-    --font-display: Optima, "Segoe UI Optima", "Candara Light", sans-serif;
-    --font-heading: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Fredoka', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Fredoka', ui-sans-serif, system-ui, sans-serif;
 
     --color-clinic-magenta: #E6007E;
     --color-clinic-yellow: #FDB913;
