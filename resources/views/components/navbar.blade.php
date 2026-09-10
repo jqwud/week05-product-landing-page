@@ -12,7 +12,7 @@
             </a>
 
             {{-- Desktop links --}}
-            <div class="hidden md:flex items-center gap-8 font-heading text-sm">
+            <div class="hidden lg:flex items-center gap-8 font-heading text-sm">
                 <a href="#home" class="relative text-gray-700 hover:text-clinic-magenta font-medium transition group">
                     Home
                     <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-clinic-magenta transition-all duration-300 group-hover:w-full"></span>
@@ -36,13 +36,13 @@
             </div>
 
             {{-- CTAs --}}
-            <div class="hidden md:flex items-center gap-3">
+            <div class="hidden lg:flex items-center gap-3">
                 <x-button variant="outline" href="#contact">Book Appointment</x-button>
                 <x-button variant="primary" href="#contact">Get Started</x-button>
             </div>
 
             {{-- Mobile menu button --}}
-            <button @click="mobileOpen = !mobileOpen" class="md:hidden text-clinic-navy" aria-label="Toggle menu">
+            <button @click="mobileOpen = !mobileOpen" class="lg:hidden text-clinic-navy" aria-label="Toggle menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -50,7 +50,7 @@
         </div>
 
         {{-- Mobile dropdown --}}
-        <div x-show="mobileOpen" x-cloak x-transition class="md:hidden pb-4 flex flex-col gap-4 font-heading">
+        <div x-show="mobileOpen" x-cloak x-transition class="lg:hidden pb-4 flex flex-col gap-4 font-heading">
             <a href="#home" @click="mobileOpen = false" class="text-gray-700 hover:text-clinic-magenta font-medium">Home</a>
             <a href="#features" @click="mobileOpen = false" class="text-gray-700 hover:text-clinic-magenta font-medium">Features</a>
             <a href="#pricing" @click="mobileOpen = false" class="text-gray-700 hover:text-clinic-magenta font-medium">Pricing</a>
