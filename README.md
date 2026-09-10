@@ -95,7 +95,7 @@ This creates:
 * Two columns from the `md` breakpoint
 * Three columns from the `lg` breakpoint
 
-The navigation also changes behavior on smaller screens, where it becomes a hamburger menu powered by Alpine.js.
+The navigation also changes behavior on smaller screens, where it becomes a hamburger menu powered by Alpine.js. The desktop navigation intentionally activates at the `lg` breakpoint (1024px) rather than `md` (768px), since tablet-width screens didn't have enough room for the full link set and both CTA buttons without feeling cramped.
 
 ### Flexbox
 
@@ -129,7 +129,7 @@ Examples include:
 * Testimonials
 * Desktop content sections
 
-Grid allows the layout to automatically adjust depending on the available screen width.
+Grid allows the layout to automatically adjust depending on the available screen width. Pricing cards use `items-stretch` so all three cards match the tallest card's height, keeping the row visually even even when one card (the highlighted plan) has more content than the others.
 
 ### User Experience (UX)
 
@@ -288,7 +288,7 @@ testimonials-section.blade.php
 contact-section.blade.php
 ```
 
-These sections are then assembled into the main page.
+Shared page structure is handled separately through `resources/views/layouts/app.blade.php`, with page-specific content living in `resources/views/pages/home.blade.php`.
 
 ### Why Reusable Components Improve Maintainability
 
@@ -341,7 +341,7 @@ The component supports:
 
 This keeps button styling consistent across the entire landing page.
 
-**Component screenshot:** Add a screenshot of the `resources/views/components` folder here.
+![Blade Components Folder](screenshots/13-Blade_Components.png)
 
 ---
 
@@ -456,21 +456,7 @@ The final version introduced:
 
 The final interface is more cohesive, recognizable, and usable than the initial prototype.
 
-Comparison images are stored in:
-
-```text
-documentation/
-```
-
-Recommended files:
-
-```text
-documentation/before-wireframe-desktop.png
-documentation/before-wireframe-mobile.png
-documentation/after-desktop.png
-documentation/after-tablet.png
-documentation/after-mobile.png
-```
+Full before-and-after comparison images are available in the [`documentation/`](documentation/) folder.
 
 ---
 
@@ -548,46 +534,45 @@ The project documentation includes screenshots demonstrating the interface at di
 
 ### Responsive Layouts
 
-* Desktop View
-* Tablet View
-* Mobile View
+**Desktop View**
+![Desktop Layout](screenshots/03-Desktop_Layout.png)
+
+**Tablet View**
+![Tablet Layout](screenshots/04-Tablet_Layout.png)
+
+**Mobile View**
+![Mobile Layout](screenshots/05-Mobile_Layout.png)
 
 ### Interface Sections
 
-* Navigation Bar
-* Hero Section
-* Features Section
-* Pricing Cards
-* Testimonials
-* Footer
+**Navigation Bar**
+![Navigation Bar](screenshots/06-Navigation_Bar.png)
+
+**Hero Section**
+![Hero Section](screenshots/07-Hero_Section.png)
+
+**Features Section**
+![Features Section](screenshots/08-Features_Section.png)
+
+**Pricing Cards**
+![Pricing Cards](screenshots/09-Pricing_Cards.png)
+
+**Testimonials**
+![Testimonials](screenshots/10-Testimonials.png)
+
+**Footer**
+![Footer](screenshots/11-Footer.png)
 
 ### Development Documentation
 
-* Before Design
-* After Design
-* VS Code Project Structure
-* Blade Components Folder
-* GitHub Repository
+**VS Code Project Structure**
+![VS Code Project Structure](screenshots/12-VSCode_Project_Structure.png)
 
-Recommended screenshot organization:
+**Blade Components Folder**
+![Blade Components Folder](screenshots/13-Blade_Components.png)
 
-```text
-screenshots/
-├── before-design.png
-├── after-design.png
-├── desktop-layout.png
-├── tablet-layout.png
-├── mobile-layout.png
-├── navigation-bar.png
-├── hero-section.png
-├── features-section.png
-├── pricing-cards.png
-├── testimonials.png
-├── footer.png
-├── vscode-project-structure.png
-├── blade-components-folder.png
-└── github-repository.png
-```
+**GitHub Repository**
+![GitHub Repository](screenshots/14-GitHub_Repository.png)
 
 ---
 
@@ -654,6 +639,12 @@ The project explored multiple visual directions before settling on the final des
 The final approach retained the clinic and pharmacy's real-world brand colors while introducing a custom mascot illustration and restrained glassmorphism effects.
 
 This allowed the landing page to feel modern without losing the identity of the actual business.
+
+### Tablet Layout Refinement
+
+An early version of the interface prioritized mobile and desktop breakpoints without fully testing the tablet range. Once reviewed at 768px, three issues were identified: the navbar felt crowded, horizontal overflow created unintended spacing, and pricing cards were uneven in height.
+
+These were resolved by moving the desktop navigation breakpoint from `md` to `lg`, adding `overflow-x-hidden` to prevent layout overflow, and switching the pricing grid to `items-stretch` so all cards match height.
 
 ### Windows/PowerShell Compatibility
 
