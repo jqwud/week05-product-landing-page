@@ -4,7 +4,7 @@
     'rating' => 5,
 ])
 
-<div class="p-6 bg-white rounded-xl border border-gray-200">
+<div class="p-6 rounded-2xl bg-white/60 backdrop-blur-md border border-white/60 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
     <div class="flex gap-1 text-clinic-yellow mb-3">
         @for ($i = 0; $i < 5; $i++)
             <svg viewBox="0 0 20 20" fill="{{ $i < $rating ? 'currentColor' : 'none' }}" stroke="currentColor" stroke-width="1" class="w-4 h-4">
@@ -14,7 +14,7 @@
     </div>
     <p class="text-gray-700 leading-relaxed">{{ $slot }}</p>
     <div class="mt-4">
-        <p class="font-semibold text-gray-900">{{ $name }}</p>
+        <p class="font-heading font-semibold text-gray-900">{{ $name }}</p>
         <p class="text-sm text-gray-500">{{ $relation }}</p>
     </div>
 </div>
