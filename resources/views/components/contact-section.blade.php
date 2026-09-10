@@ -1,5 +1,8 @@
-<section id="contact" class="py-16 md:py-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
+<section id="contact" class="relative overflow-hidden py-16 md:py-24 bg-gray-50">
+
+    <div class="absolute top-0 left-1/4 w-72 h-72 rounded-full bg-clinic-yellow/10 blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
 
         <div>
             <x-section-title title="Visit or Call Us" subtitle="We're happy to answer any questions" />
@@ -34,16 +37,16 @@
             </x-button>
         </div>
 
-        <div class="bg-white rounded-2xl border border-gray-200 p-8">
-            <h3 class="font-semibold text-gray-900 mb-4">Clinic Hours</h3>
-            <dl class="space-y-2 text-sm">
-                <div class="flex justify-between"><dt class="text-gray-600">Monday</dt><dd>11:00 AM – 4:00 PM</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Tuesday</dt><dd>9:00 AM – 11:00 AM</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Wednesday</dt><dd>11:00 AM – 4:00 PM</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Thursday</dt><dd>9:00 AM – 11:00 AM</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Friday</dt><dd>11:00 AM – 4:00 PM</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Saturday</dt><dd>Closed</dd></div>
-                <div class="flex justify-between"><dt class="text-gray-600">Sunday</dt><dd>Closed</dd></div>
+        <div class="p-8 rounded-3xl bg-white/60 backdrop-blur-md border border-white/60 shadow-md">
+            <h3 class="font-heading font-semibold text-gray-900 mb-4">Clinic Hours</h3>
+            <dl class="space-y-2 text-sm text-gray-600">
+                <div class="flex justify-between"><dt>Monday</dt><dd>11:00 AM – 4:00 PM</dd></div>
+                <div class="flex justify-between"><dt>Tuesday</dt><dd>9:00 AM – 11:00 AM</dd></div>
+                <div class="flex justify-between"><dt>Wednesday</dt><dd>11:00 AM – 4:00 PM</dd></div>
+                <div class="flex justify-between"><dt>Thursday</dt><dd>9:00 AM – 11:00 AM</dd></div>
+                <div class="flex justify-between"><dt>Friday</dt><dd>11:00 AM – 4:00 PM</dd></div>
+                <div class="flex justify-between"><dt>Saturday</dt><dd>Closed</dd></div>
+                <div class="flex justify-between"><dt>Sunday</dt><dd>Closed</dd></div>
             </dl>
         </div>
 
