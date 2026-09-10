@@ -9,7 +9,27 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --color-clinic-magenta: #C71585;
-    --color-clinic-blue: #1E5AA8;
-    --color-clinic-yellow: #FFC72C;
+    --color-clinic-magenta: #E6007E;
+    --color-clinic-yellow: #FDB913;
+    --color-clinic-navy: #1B3A8C;
+}
+
+@layer utilities {
+    [x-cloak] { display: none !important; }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-16px); }
+    }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+
+    @keyframes pulse-glow {
+        0%, 100% { opacity: 0.5; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    .animate-pulse-glow { animation: pulse-glow 5s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .animate-float, .animate-pulse-glow { animation: none; }
+    }
 }
