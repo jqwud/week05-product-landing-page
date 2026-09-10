@@ -1,5 +1,8 @@
-<section id="pricing" class="py-16 md:py-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="pricing" class="relative overflow-hidden py-16 md:py-24 bg-white">
+
+    <div class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[36rem] h-[36rem] rounded-full bg-clinic-magenta/10 blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <x-section-title
             title="Our Services & Investment"
@@ -38,15 +41,15 @@
                 href="#contact"
             >
                 <li class="flex items-start gap-2 text-sm text-gray-600">
-                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-blue shrink-0"></span>
+                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-navy shrink-0"></span>
                     Professional administration
                 </li>
                 <li class="flex items-start gap-2 text-sm text-gray-600">
-                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-blue shrink-0"></span>
+                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-navy shrink-0"></span>
                     Health records kept on file
                 </li>
                 <li class="flex items-start gap-2 text-sm text-gray-600">
-                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-blue shrink-0"></span>
+                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-clinic-navy shrink-0"></span>
                     Guidance on vaccine schedules
                 </li>
             </x-pricing-card>
