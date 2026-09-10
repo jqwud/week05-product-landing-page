@@ -1,12 +1,15 @@
-<section id="features" class="py-16 md:py-24 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="features" class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-pink-50/50 to-white">
+
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] rounded-full bg-clinic-yellow/10 blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <x-section-title
             title="Our Services"
             subtitle="Comprehensive pediatric care and pharmacy services, all in one place"
         />
 
-        <div class="mt-12 grid sm:grid-cols-2 gap-x-12">
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <x-feature-card title="Pediatric Checkups" accent="magenta">
                 <x-slot:icon>
@@ -19,7 +22,7 @@
                 Regular health monitoring &amp; well-child visits.
             </x-feature-card>
 
-            <x-feature-card title="Immunization" accent="blue">
+            <x-feature-card title="Immunization" accent="navy">
                 <x-slot:icon>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
                         <path d="M18 3l3 3-2 2-3-3 2-2z" />
@@ -51,7 +54,7 @@
                 Dr. Rona Arriola Robles, RPh, M.D., DPPS.
             </x-feature-card>
 
-            <x-feature-card title="On-Site Pharmacy" accent="blue">
+            <x-feature-card title="On-Site Pharmacy" accent="navy">
                 <x-slot:icon>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
                         <rect x="2" y="9" width="20" height="6" rx="3" transform="rotate(-45 12 12)" />
